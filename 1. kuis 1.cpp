@@ -1,7 +1,7 @@
 #include <iostream>
-#include <unordered_set>
+#include <unordered_set> //struktur data untuk set.find dan set.end
 
-using namespace std;
+using namespaced std;
 
 bool TwoSum(int nums[], int n, int k) {
 	
@@ -11,7 +11,7 @@ bool TwoSum(int nums[], int n, int k) {
     for (int i = 0; i < n; i++) {
         int complement = k - nums[i];
         
-        /* 'set.find(complement)' untuk mencari
+        	/* 'set.find(complement)' untuk mencari
 		apakah nilai 'complement' sudah ada di dalam set 'set'*/
         
 		/* 'set.find()'
@@ -52,4 +52,3 @@ int main() {
 	delete[] nums; //dealokasi memori
     return 0;
 }
-
